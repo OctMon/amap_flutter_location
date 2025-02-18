@@ -1,4 +1,4 @@
-## 【3.1.0】 - 2025-02-18.
+## 【3.1.1】 - 2025-02-18.
 * 升级Flutter 3.0.0以上版本，解决hashValues报错
 * 解决 AAPT: error: resource android:attr/lStar not found报错
 * 解决Namespace not specified.报错
