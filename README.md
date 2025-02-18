@@ -19,8 +19,8 @@ $ flutter build ios
 
 ### 在需要的定位功能的页面中引入定位Flutter插件的dart类
 ``` Dart
-import 'package:amap_flutter_location/amap_flutter_location.dart';
-import 'package: amap_flutter_location/amap_location_option.dart';
+import 'package:amap_flutter_location_plus/amap_flutter_location_plus.dart';
+import 'package: amap_flutter_location_plus/amap_location_option.dart';
 ```
 ## 接口说明
 
