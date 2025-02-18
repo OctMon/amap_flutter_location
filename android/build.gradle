@@ -22,7 +22,8 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
+    namespace 'com.amap.flutter.location'
+    compileSdkVersion 31
 
     defaultConfig {
         minSdkVersion 16

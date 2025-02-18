@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:amap_flutter_location_plus/amap_flutter_location_plus.dart';
+import 'package:amap_flutter_location_plus/amap_location_option.dart';
 import 'package:flutter/material.dart';
-import 'package:amap_flutter_location/amap_flutter_location.dart';
-import 'package:amap_flutter_location/amap_location_option.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() {
