@@ -15,6 +15,12 @@ class AMapLocationOption {
   ///默认值：false
   bool onceLocation = false;
 
+  /// 是否允许后台定位
+  /// 是否允许后台定位。只在iOS 9.0及之后起作用。设置为YES的时候必须保证 Background Modes 中的 Location updates 处于选中状态，否则会抛出异常。
+  /// 由于iOS系统限制，需要在定位未开始之前或定位停止之后，修改该属性的值才会有效果。
+  /// 默认值：false
+  bool allowsBackgroundLocationUpdates = false;
+
   ///Android端定位模式, 只在Android系统上有效<br>
   ///默认值：[AMapLocationMode.Hight_Accuracy]<br>
   ///可选值：<br>
@@ -61,6 +67,7 @@ class AMapLocationOption {
       this.locationMode = AMapLocationMode.Hight_Accuracy,
       this.geoLanguage = GeoLanguage.DEFAULT,
       this.onceLocation = false,
+      this.allowsBackgroundLocationUpdates = false,
       this.pausesLocationUpdatesAutomatically = false,
       this.desiredAccuracy = DesiredAccuracy.Best,
       this.distanceFilter = -1,
@@ -75,6 +82,7 @@ class AMapLocationOption {
       "locationMode": locationMode.index,
       "geoLanguage": geoLanguage.index,
       "onceLocation": onceLocation,
+      "allowsBackgroundLocationUpdates": allowsBackgroundLocationUpdates,
       "pausesLocationUpdatesAutomatically": pausesLocationUpdatesAutomatically,
       "desiredAccuracy": desiredAccuracy.index,
       'distanceFilter': distanceFilter,

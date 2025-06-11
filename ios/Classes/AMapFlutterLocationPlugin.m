@@ -146,6 +146,11 @@
         return;
     }
     
+    NSNumber *allowsBackgroundLocationUpdates = call.arguments[@"allowsBackgroundLocationUpdates"];
+    if (allowsBackgroundLocationUpdates) {
+        [manager setAllowsBackgroundLocationUpdates:[allowsBackgroundLocationUpdates boolValue]];
+    }
+    
     NSNumber *needAddress = call.arguments[@"needAddress"];
     if (needAddress) {
         [manager setLocatingWithReGeocode:[needAddress boolValue]];
