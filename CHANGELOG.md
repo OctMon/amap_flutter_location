@@ -1,3 +1,6 @@
+## 【3.1.2】 - 2025-06-11.
+* 增加是否允许后台定位设置allowsBackgroundLocationUpdates
+
 ## 【3.1.1】 - 2025-02-18.
 * 升级Flutter 3.0.0以上版本，解决hashValues报错
 * 解决 AAPT: error: resource android:attr/lStar not found报错
